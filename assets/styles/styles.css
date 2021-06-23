@@ -37,7 +37,7 @@ ul li a:hover{
 	transition: all 0.5s;
 }
 .bienvenida{
-	background-image: url("../imgs/background_11zon.jpg");
+	background-image: url("../imgs/background1.svg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 0px 65px;
