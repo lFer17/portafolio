@@ -1,0 +1,24 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "portafolio_web",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portafolio",
+    "desarrollador",
+    "web",
+    "developer",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "L17",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}

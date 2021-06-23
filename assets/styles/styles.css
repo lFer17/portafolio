@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Serif Caption', serif;
+}
+body{
+		background:#111113;
+}
+header {
+	align-items: center;
+	background:#111113;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+    height: 25px;
+    padding: 20px 90px;
+
+}
+header nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 15px;
+}
+ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ul li a:hover{
+	font-size: 17px;
+	text-decoration: line-through;
+	text-decoration-color: #111113;
+	text-decoration-thickness: 5px;
+	transition: all 0.5s;
+}
+.bienvenida{
+	background-image: url("../imgs/background_11zon.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0px 65px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 91vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 100px;
+}
+
+h2,h1{
+	color: #ffffff;
+	font-size: 70px;
+	word-spacing: 20px;
+}
+.blue {
+	color:#3776b8;
+}
+
+@keyframes example {
+  0%{background-color:#3776b8;}
+  50% {background-color:transparent;}
+  100% {background-color:#3776b8;}
+}
+
+.btn {
+	text-align:center;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 15px;
+	width: 140px;
+	height: 40px;
+	padding: 5px;
+	border-radius:10px 0px 10px 0px;
+	border-color: #3776b8;
+	cursor: pointer;
+	animation: example;
+	animation-duration: 2s;
+	animation-iteration-count: 3;
+	animation-timing-function: linear;
+}
+
+.btn-bienvenida{
+	align-self: flex-start;
+	position: relative;
+	top: 5%;
+}
+
+#about {
+	background: radial-gradient(circle at top, #3776b838 , #11111342);
+	border: solid #3776b8 1px;
+	border-radius:10px 0px 10px 0px;
+/*	box-shadow: 18px -12px 24px -8px rgba(55,118,184,0.48);
+	-webkit-box-shadow: 18px -12px 24px -8px rgba(55,118,184,0.48);
+	-moz-box-shadow: 18px -12px 24px -8px rgba(55,118,184,0.48);*/
+	box-shadow: 3px 6px 24px 10px rgba(55,118,184,0.48);
+	-webkit-box-shadow: 3px 6px 24px 10px rgba(55,118,184,0.48);
+	-moz-box-shadow: 3px 6px 24px 10px rgba(55,118,184,0.48);
+	padding: 20px;
+	color: whitesmoke;
+	height: 400px;
+	margin: 0 auto;
+	width: 70%;
+	
+}
