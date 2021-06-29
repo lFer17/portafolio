@@ -68,7 +68,7 @@ h2,h1{
 	color: #ffffff;
 	font-size: 40px;
 }
-h3{
+section.inner h3{
 	text-align: center;
 	text-transform: uppercase;
 	padding: 20px;
@@ -97,6 +97,7 @@ h4{
 	height: 40px;
 	padding: 5px;
 	border-radius:10px 0px 10px 0px;
+	border: solid 1.5px;
 	border-color: #3776b8;
 	cursor: pointer;
 	animation: example;
@@ -104,20 +105,21 @@ h4{
 	animation-iteration-count: 3;
 	animation-timing-function: linear;
 }
-
+.btn a{
+	color: #ffffff;
+	text-decoration: none;
+} 
 .btn-bienvenida{
 	align-self: flex-start;
 	position: relative;
 	top: 5%;
 }
 
+
 .container{
 	background: radial-gradient(circle at top, #3776b838 , #11111342);
 	border: solid #3776b8 1px;
 	border-radius:10px 0px 10px 0px;
-/*	box-shadow: 18px -12px 24px -8px rgba(55,118,184,0.48);
-	-webkit-box-shadow: 18px -12px 24px -8px rgba(55,118,184,0.48);
-	-moz-box-shadow: 18px -12px 24px -8px rgba(55,118,184,0.48);*/
 	box-shadow: 3px 6px 24px 10px rgba(55,118,184,0.48);
 	-webkit-box-shadow: 3px 6px 24px 10px rgba(55,118,184,0.48);
 	-moz-box-shadow: 3px 6px 24px 10px rgba(55,118,184,0.48);
@@ -134,4 +136,89 @@ h4{
 
 .inner p {
 	font-size: 18px;
+}
+
+#about div {
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 450px;
+}
+
+.link-cv{
+	background-image: linear-gradient(to right ,#090979,#3776b8, #00d4ff);
+	border-radius: 40px;
+	-webkit-box-shadow: 2px 6px 8px -4px rgba(55,118,184,0.66); 
+	box-shadow: 2px 6px 8px -4px rgba(55,118,184,0.66);
+	border: none;
+	color: #ffffff;
+	display: block;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#about .link-cv{
+	align-self: center;
+	margin-top: 45px;
+	width: 150px;
+}
+section.cards{
+	margin-top: 25px;
+}
+.cards{
+	display: flex;
+	gap: 10px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.card{
+	background: #ffffff1f;
+	/*border: solid 1px whitesmoke;*/
+	border-radius:10px 0px 10px 0px;
+}
+.card-header{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.card-header img{
+  width: 350px;
+  height: 231px;
+}
+.card-header a{
+	position: absolute;
+	background-image: linear-gradient(to right ,#09097970,#3776b8, #00d4ffa3);
+	bottom: 0px;
+	align-self: center;
+	width: 95%;
+	border-radius: 0px;
+}
+.card-footer{
+	display: flex;
+}
+.card-footer-imgs img {
+	height: 20px;
+	width: 20px;
+}
+/*                                           estilos  del formulario                                      */
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.form-controls{
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 1px white;
+	outline: none;
 }
