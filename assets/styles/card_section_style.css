@@ -52,3 +52,10 @@ section.cards{
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
+.see-live:hover{
+	background: transparent;
+	border: solid 2px #3776b8;
+	border-radius:10px 0px 10px 0px;
+	transition: all 0.2s linear;
+}

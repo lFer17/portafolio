@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Serif Caption', serif;
+	scroll-behavior: smooth;
 }
 body{
 		background:#111113;
@@ -16,13 +17,13 @@ header {
 	color: #ffffff;
 	display: flex;
 	justify-content: space-between;
-  height: 25px;
-  padding: 20px 90px;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
-  position: fixed;
-  z-index: 999;
+	height: 25px;
+	padding: 20px 90px;
+	width: -moz-available;          /* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+	width: fill-available;
+	position: fixed;
+	z-index: 999;
 
 }
 header nav ul{
@@ -64,6 +65,7 @@ ul li a:hover{
 h2,h1{
 	color: #ffffff;
 	font-size: 4.5rem;
+	width: 45%;
 	word-spacing: 20px;
 }
 .text{
@@ -160,43 +162,42 @@ h4{
 		height: 400px;
 }
 
-section.cards{
-	margin-top: 25px;
-}
-.cards{
-	display: flex;
-	gap: 10px;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
 
-.card{
-	background: #ffffff1f;
-	/*border: solid 1px whitesmoke;*/
-	border-radius:10px 0px 10px 0px;
-}
-.card-header{
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-.card-header img{
-	width: 284px;
-    height: 187px;
-}
-.card-header a{
-	position: absolute;
-	background-image: linear-gradient(to right ,#09097970,#3776b8, #00d4ffa3);
-	bottom: 0px;
-	align-self: center;
-	width: 93%;
-	border-radius: 0px;
-}
-.card-footer{
-	display: flex;
-}
-.card-footer-imgs img {
-	height: 20px;
-	width: 20px;
+
+@media (max-width: 600px) {
+
+	header nav ul{
+		gap: 9px;
+	}
+
+
+	ul li a {
+		font-size: 0.6em;
+	}
+	ul li a:hover{
+		font-size: 0.8em;
+	}
+	header{
+		padding: 20px 40px;
+	}
+	.bienvenida{
+		padding-left: 40px;
+	}
+	h2,h1{
+		font-size: 2.5rem;
+		word-spacing: 10px;
+	}
+	.inner{
+		padding: 19px;
+	}
+	section.inner h3{
+		padding: 0.5em;
+	}
+	
+	.text{
+		font-size: 1.5rem;
+	}
+	.inner p {
+		font-size: 0.8em;
+	}
 }
