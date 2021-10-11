@@ -37,23 +37,22 @@
      <section class="inner" id="about">
        <h3>Acerca de mí</h3>
        <div>
-         <h4> ¿ Quien soy ? </h4>
-         <br>
-         <p>
-         Voy a compartirlo mostrando como pienso,el mundo esta lleno de cosas o personas super random y desconocidas que sorprenden todos los dias. lo que significa que siempre hay algo nuevo por aprender, situacion perfecta para mi un adulto con asombro de niño (aunque mantego la cara de adulto para disimular la emoción XD ) que disfruta al maximo aprender cosas nuevas todos los dias. <br> - Un dia sin aprender y sonreir es un dia aburrido. - 
+         <!-- ajustar posisicon esta afectando el space-around -->
+         <!-- <h4> ¿ Quien soy ? </h4> -->
+         <p>El mundo esta lleno de cosas o personas super random y desconocidas que sorprenden todos los dias. lo que significa que siempre hay algo nuevo por aprender, situacion perfecta para mi un adulto con asombro de niño (aunque mantego la cara de adulto para disimular la emoción XD ) que disfruta al maximo aprender cosas nuevas todos los dias. <br> - Un dia sin aprender y sonreir es un dia aburrido. - 
         </p>
         <!-- "./assets/cv/accceso.pdf" -->
-        <a class="link-cv" href="#" target="_Blank"> Curriculum >> </a>
+        <button class="btn btn-center "><a href="/assets/cv/CurriculumVitae.pdf" target="_Blank"> Curriculum >> </a></button>
+        
       </div>
      </section>
 
      <section  id="proyectos">
-          <h3 class="proyectos-title" >Proyectos</h3>
           <div class="cards">
-          <div class="card">
+            <div class="card">
              <div class="card-header">
                <img src="./assets/imgs/background1.svg">
-               <a class="link-cv" href="#">ver en vivo</a>  
+               <a class="see-live" href="#">ver en vivo</a>  
              </div>
              <h3>proyecto random</h3>
              <div class="card-footer">
@@ -65,11 +64,10 @@
                </div>
              </div>
            </div>
-         
-           <div class="card">
+            <div class="card">
              <div class="card-header">
                <img src="./assets/imgs/background1.svg">
-               <a class="link-cv" href="#">ver en vivo</a>  
+               <a class="see-live" href="#">ver en vivo</a>  
              </div>
              <h3>proyecto random</h3>
              <div class="card-footer">
@@ -79,8 +77,24 @@
                  <img src="./assets/imgs/css.png">
                  <img src="./assets/imgs/rails.png">
                </div>
-                </div>
+             </div>
+           </div>
+            <div class="card">
+             <div class="card-header">
+               <img src="./assets/imgs/background1.svg">
+               <a class="see-live" href="#">ver en vivo</a>  
+             </div>
+             <h3>proyecto random</h3>
+             <div class="card-footer">
+               <p>Tecnologias:</p>
+               <div class="card-footer-imgs">
+                 <img src="./assets/imgs/css.png">
+                 <img src="./assets/imgs/css.png">
+                 <img src="./assets/imgs/rails.png">
                </div>
+             </div>
+           </div>
+
              </div>
      
      </section>
@@ -88,8 +102,7 @@
     <form class="form">
       <input class="form-controls" type="email" name="email" placeholder="Ingresa tu email" required>
       <input class="form-controls" type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-      <textarea rows="4" cols="50 ">
-        
+      <textarea rows="4" cols="50 ">        
       </textarea>
       <div class="form-btns">
       <input type="submit" >

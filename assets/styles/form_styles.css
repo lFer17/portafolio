@@ -1,0 +1,77 @@
+/*                                           estilos  del formulario                                      */
+.form{
+	display: flex;
+	flex-direction: column;
+    height: 60vh;
+    justify-content: space-evenly;
+    padding: 30px;
+	/* width: 90%; */
+	margin: 0 auto;
+}
+
+.form-controls{
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 2px #3776b8;
+    border-radius: 10px;
+    color: #3776b8;
+    font-size: 1em;
+    outline: none;
+    padding: 5px;
+    box-shadow: 0px 0px 24px 0px rgba(55, 117, 184, 0.171);
+	-webkit-box-shadow: 0px 0px 24px 0px rgba(55,118,184,0.48);
+	-moz-box-shadow: 0px 0px 24px 0px rgba(55,118,184,0.48);
+}
+
+.form-controls::placeholder {
+    color: #3776b8;
+  }
+
+.form textarea{
+    background-color: transparent;
+    border:solid 2px #3776b8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px 0px rgba(55, 117, 184, 0.171);
+	-webkit-box-shadow: 0px 0px 24px 0px rgba(55,118,184,0.48);
+	-moz-box-shadow: 0px 0px 24px 0px rgba(55,118,184,0.48);
+    color: #3776b8;
+    font-size: 1em;
+    padding: 5px;
+    outline: none;
+}
+
+.form-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.form-btns input{
+    border: none;
+    border-radius: 10px;
+    background-color: #12184c;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 10px;
+    outline: none;
+    width:35%;
+}
+
+.form-btns input[type="reset"]{
+    background-color: transparent;
+    border:solid 1px #3776b8;
+    box-shadow: 0px 0px 24px 0px rgba(55, 117, 184, 0.171);
+ }
+
+.form-btns input[type="reset"]:hover{
+    background-color: #3776b8;
+    transition: all 0.5s;
+}
+
+.form-btns input[type="submit"]:hover{
+    background-color: transparent;
+    border:solid 1px #3776b8;
+    box-shadow: 0px 0px 24px 0px rgba(55, 117, 184, 0.171);
+    transition: all 0.5s;
+}

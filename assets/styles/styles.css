@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("/assets/styles/card_section_style.css");
+@import url("/assets/styles/form_styles.css");
 *{
 	margin: 0;
 	padding: 0;
@@ -61,21 +63,21 @@ ul li a:hover{
 
 h2,h1{
 	color: #ffffff;
-	font-size: 70px;
+	font-size: 4.5rem;
 	word-spacing: 20px;
 }
 .text{
 	color: #ffffff;
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 section.inner h3{
 	text-align: center;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 1.2em;
 	font-family: 'Roboto', sans-serif;
 }
 h4{
-		font-size: 20px;
+		font-size: 1.2em;
 		font-weight: lighter;
 }
 .blue {
@@ -91,6 +93,8 @@ h4{
 .btn {
 	text-align:center;
 	background-color: transparent;
+	border:solid 1px #3776b8;
+    box-shadow: 0px 0px 24px 0px rgba(55, 117, 184, 0.171);
 	color: #ffffff;
 	font-size: 18px;
 	width: 140px;
@@ -105,14 +109,23 @@ h4{
 	animation-iteration-count: 3;
 	animation-timing-function: linear;
 }
+.btn:hover{
+    background-color: #3776b8;
+    transition: all 0.5s;
+}
 .btn a{
+	box-sizing: border-box;
 	color: #ffffff;
+	font-size:1rem ;
 	text-decoration: none;
 } 
 .btn-bienvenida{
 	align-self: flex-start;
 	position: relative;
 	top: 5%;
+}
+.btn-center {
+	align-self: center;
 }
 
 
@@ -135,7 +148,8 @@ h4{
 }
 
 .inner p {
-	font-size: 18px;
+	text-align: justify;
+	font-size: 1em;
 }
 
 #about div {
@@ -143,29 +157,9 @@ h4{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		height: 450px;
+		height: 400px;
 }
 
-.link-cv{
-	background-image: linear-gradient(to right ,#090979,#3776b8, #00d4ff);
-	border-radius: 40px;
-	-webkit-box-shadow: 2px 6px 8px -4px rgba(55,118,184,0.66); 
-	box-shadow: 2px 6px 8px -4px rgba(55,118,184,0.66);
-	border: none;
-	color: #ffffff;
-	display: block;
-	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-	padding: 10px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-#about .link-cv{
-	align-self: center;
-	margin-top: 45px;
-	width: 150px;
-}
 section.cards{
 	margin-top: 25px;
 }
@@ -188,15 +182,15 @@ section.cards{
 	position: relative;
 }
 .card-header img{
-  width: 350px;
-  height: 231px;
+	width: 284px;
+    height: 187px;
 }
 .card-header a{
 	position: absolute;
 	background-image: linear-gradient(to right ,#09097970,#3776b8, #00d4ffa3);
 	bottom: 0px;
 	align-self: center;
-	width: 95%;
+	width: 93%;
 	border-radius: 0px;
 }
 .card-footer{
@@ -205,20 +199,4 @@ section.cards{
 .card-footer-imgs img {
 	height: 20px;
 	width: 20px;
-}
-/*                                           estilos  del formulario                                      */
-
-.form{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 90%;
-	margin: 0 auto;
-}
-
-.form-controls{
-	background-color: transparent;
-	border: none;
-	border-bottom: solid 1px white;
-	outline: none;
 }
