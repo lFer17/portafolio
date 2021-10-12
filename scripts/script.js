@@ -74,3 +74,23 @@ const next = () => {
 }
 
 next()
+
+//                                                         form controls 
+
+
+
+let send = document.querySelector('.send');
+
+send.addEventListener('click',(event) =>{
+ let status="";
+  event.preventDefault();
+  console.log("click")
+  let tempParams = {
+    from_name: document.getElementById("from_name").value, 
+    to_name: document.getElementById("to_name").value, 
+    message: document.getElementById("msg").value 
+  };
+  emailjs.send('service_iypjq1q','template_m8defut',tempParams,"user_nsW0qjQ7kCGBIQ8jvvh33")
+  .then(res => console.log("succes",res.status))
+  
+})

@@ -37,11 +37,8 @@
      <section class="inner" id="about">
        <h3>Acerca de mí</h3>
        <div>
-         <!-- ajustar posisicon esta afectando el space-around -->
-         <!-- <h4> ¿ Quien soy ? </h4> -->
          <p>El mundo esta lleno de cosas o personas super random y desconocidas que sorprenden todos los dias. lo que significa que siempre hay algo nuevo por aprender, situacion perfecta para mi un adulto con asombro de niño (aunque mantego la cara de adulto para disimular la emoción XD ) que disfruta al maximo aprender cosas nuevas todos los dias. <br> - Un dia sin aprender y sonreir es un dia aburrido. - 
         </p>
-        <!-- "./assets/cv/accceso.pdf" -->
         <button class="btn btn-center "><a href="./assets/cv/CurriculumVitae.pdf" target="_Blank"> Curriculum >> </a></button>
         
       </div>
@@ -51,7 +48,7 @@
           <div class="cards">
             <div class="card">
              <div class="card-header">
-               <img src="./assets/imgs/background1.svg">
+               <img src="./assets/imgs/proyectos/elige_tu_aventura.png">
                <a class="see-live" href="#">ver en vivo</a>  
              </div>
              <h3>proyecto random</h3>
@@ -66,7 +63,7 @@
            </div>
             <div class="card">
              <div class="card-header">
-               <img src="./assets/imgs/background1.svg">
+               <img src="./assets/imgs/proyectos/giphy_app.png">
                <a class="see-live" href="#">ver en vivo</a>  
              </div>
              <h3>proyecto random</h3>
@@ -100,17 +97,18 @@
      </section>
     
     <form id="contacto" class="form">
-      <input class="form-controls" type="email" name="email" placeholder="Ingresa tu email" required>
-      <input class="form-controls" type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-      <textarea rows="4" cols="50 ">        
+      <input id="from_name" class="form-controls" type="email" name="email" placeholder="Ingresa tu email" required>
+      <input id="to_name" class="form-controls" type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+      <textarea  id = "msg" rows="4" cols="50 ">        
       </textarea>
       <div class="form-btns">
-      <input type="submit" >
-      <input type="reset" >
+      <input type="submit" class="send">
+      <input type="reset">
       </div>
      </form>
      </div>  
     <script src="./node_modules/animejs/lib/anime.min.js" defer></script>
+    <script  src="node_modules/emailjs-com/dist/email.min.js" defer></script>
     <script  src="./scripts/script.js" defer></script>
   </main>
 </body>
