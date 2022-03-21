@@ -4,7 +4,7 @@ let container = document.querySelector('#proyectos');
 //     method for insert proyects dinamically
 
 // let div = document.createElement("h2");
-// let texto = document.createTextNode("Culito de rubia culito que clavo");
+// let texto = document.createTextNode("Hola mundo");
 
 // div.appendChild(texto);
 // container.appendChild(div);
