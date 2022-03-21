@@ -143,6 +143,7 @@ h4{
 	margin: 0 auto;
 	margin-top: 20px;
 	width: 70%;
+	overflow: hidden;
 }
 
 .inner{

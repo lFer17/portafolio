@@ -1,0 +1,3 @@
+<div id="qrcode">
+<img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Flfer17.github.io%2Fportafolio%2F&s=6&e=m" alt="Generador de Códigos QR Codes"/>
+</div>

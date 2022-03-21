@@ -1,3 +1,15 @@
+let cards = document.querySelectorAll('.card');
+let container = document.querySelector('#proyectos');
+
+//     method for insert proyects dinamically
+
+// let div = document.createElement("h2");
+// let texto = document.createTextNode("Culito de rubia culito que clavo");
+
+// div.appendChild(texto);
+// container.appendChild(div);
+
+
 class TextScramble {
   constructor(el) {
     this.el = el
@@ -94,3 +106,18 @@ send.addEventListener('click',(event) =>{
   .then(res => console.log("succes",res.status))
   
 })
+
+
+//                                          Cards animations 
+
+const observer = new IntersectionObserver(entry => {
+  
+  cards.forEach( card => {
+    card.classList.toggle('show',entry.isIntersecting);
+  })
+
+},{
+  rootMargin:'-100px'
+})
+
+observer.observe(container);
